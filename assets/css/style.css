@@ -217,9 +217,10 @@
 .heading2__list{
     position: absolute;
     width: 730px;
-    top:calc(100% + 12px);
+    top:calc(100% + 22px);
     box-shadow: 0px 1px 1px #d3d3d3;
     display:none;
+    background-color:#fff;
     animation:fadeOut ease 0.3s;
 
 }
@@ -227,9 +228,9 @@
     content:"";
     display:block;
     position:absolute;
-    top:calc(0% - 16px);
+    top:calc(0% - 26px);
     width:166px;
-    height:20px;
+    height:26px;
 }
 .list-selection{
     list-style-image:url('/assets/img/3669297_arrow_ic_play_icon\ \(1\).png');
@@ -600,10 +601,15 @@ input.contact__send:hover{
 
 }
 /* footer  */
+.footer{
+    padding-top: 54px;
+    border-top: 1px solid #e7e1e1;
+}
 .container-footer{
     max-width:1320px;
     width:100%;
     margin:0 auto;
+    padding-bottom:40px;
 }
 .footer-box{
     display:flex;
@@ -611,8 +617,97 @@ input.contact__send:hover{
 }
 .footer-box i{
     font-size:2.6rem;
-    margin-right:14px;
+        margin-right:14px;
+    margin-bottom: -12px;
 }
 .footer-box_content{
     font-size: 1.6rem;
+    margin-top:20px;
+}
+.footer-box_content h3{
+ margin:0 0 10px 0;
+}
+.foot-number_phone{
+    margin-bottom: 10px;
+    display:block;
+}
+.footer-box_content a{
+    text-decoration:none;
+    color:var(--text-color);
+    transition:all ease-out 0.2s;
+} 
+.footer-box_content a:hover,
+.box-content a:hover
+{
+    color:#fa992b;
+}
+.box-content{
+    display:flex;
+    flex-direction:column;
+}
+.box-content h3{
+ margin:0 0 16px 0;
+ font-size: 1.9rem;
+}
+.box-content a{
+ font-size:1.6rem;
+ text-decoration: none;
+ color:var(--text-color);
+ margin-top:20px;
+ transition:all ease-out 0.2s;
+}
+
+.footer-app{
+    display:flex;
+    
+}
+.footer-qr{
+    width:50%;
+}
+.app-play{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* banner */
+.box-banner{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 33vw;
+    z-index: 1;
+    top: 50%;
+    right: 0;
+    transform: translateY(-100%);
+}
+
+.box-banner_img{
+    order: 2;
+}
+.icon-banner{
+    border-radius:50%;
+    border:2px solid rgb(212, 34, 144);
+    width:100px;
+}
+.box-banner_content{
+    border-radius:10px;
+    order: 1;
+    font-size:1.6rem;
+    padding:10px 10px;
+    font-weight:700;
+    animation:fadeAction ease-out 3s infinite alternate;
+    background-color: rgb(212, 41, 198);
+}
+@keyframes fadeAction{
+    0%{
+        transform: translateX(0);
+        background-image:linear-gradient(to left,rgb(45, 218, 59),rgb(77, 185, 235) );
+        color:#271f15;
+    }
+    20%{
+        transform:translateX(-20%);
+        background-image:linear-gradient(to left,rgb(238, 45, 45),rgb(243, 233, 92) );
+        color: rgb(4, 46, 88);
+    }
+
 }

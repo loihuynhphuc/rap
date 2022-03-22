@@ -87,6 +87,17 @@ html{
   display:flex;
   align-items:center;
   padding: 4px 8px;
+  /* animation:switchColor 0.7s infinite alternate; */
+}
+@keyframes switchColor{
+    to{
+        background-color:red;
+        color:yellow;
+    }
+    from{
+        background-color: yellow;
+        color:red;
+    }
 }
 .btn.btn--btn-hover:hover{
     background-color:rgb(253, 66, 66);
